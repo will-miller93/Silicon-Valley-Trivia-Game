@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game!</title>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript"></script>
-    <link src="assets/javascript/app.js">
-    <!-- put the jquery link in right here. -->
+    <script src="assets/javascript/app.js"></script>
+    
 </head>
 <body>
 
     <div class="jumbotron">
         <h1>It's a Trivia Game!!</h1>
         <p> Try to get all of the questions right before the timer runs out! </p>
+        <div class="start-button">
+            <button id="start-button">Start!</button>
+        </div>
     </div>
 
-    <!-- what do you need to be able to dynamically generate everything you need? -->
-
-    
-
-    
-        
-        <!-- what do you need inside this div for the radio button? -->
-        <!-- the radio "buttons" are not actually buttons. remember that they are checkboxes! -->
-        <!-- look at the examples from class to look at their HTML -->
-
-    <!-- a place to display the end score. (by score i mean the number of questions answered correctly) -->
+    <!-- the container is standard for every game screen -->
     <div class="container">
-        <h1> It's the ______ Trivia Game! </h1>
 
-        <div class=""></div>
-
-        <!-- a div to attach the timer to -->
-
-        <!-- a div to attach the questions to and <p> tags to attach the text of the questions too -->
+        <div class="timer">
+            <!-- a div to attach the timer to -->
+            <!-- this is the div where you dynamically create a tag to attach the timer to. -->
+        </div>
         
-        <!-- inside this div should be another div to attach the buttons to, and <p> tags attached to the buttons to attach the text ofthe answers to -->
-            <!-- should you use form? or something else? -->
+        <div class="questions">
+            <p id="questionText"> </p>
+            <form id="radio-group">
+                <div class="radio">
+                    <input type="radio" name="posAnswer" id="radio-one"><span id="posOne"> </span>
+                </div>
+                <br>
+                <div class="radio">
+                    <input type="radio" name="posAnswer" id"radio-two"><span id="posTwo"> </span>
+                </div>
+                <br>
+                <div class="radio">
+                    <input type="radio" name="posAnswer" id"radio-three"><span id="posThree"> </span>
+                </div>
+                <br>
+                <div class="radio">
+                    <input type="radio" name="posAnswer" id"radio-four"><span id="posFour"> </span>
+                </div>
+            </form>
 
-        <!-- a submit button if the user finishes the questions before the timer runs out -->
-            <!-- just one button and it finishes the timer -->
-
-        <!-- a div to attach the final score to -->
-            <!-- you could use an alert. but why when you could do something else. -->
+        <br>   
+        </div>
+        <div class = "submit-button">
+            <button id="submit-button">Submit</button>
+        </div>
+        <div class = "reset-button">
+            <button id="reset-button">Play Again!</button>
+        </div>
 
     </div>
-
-
-
 
     
 </body>
