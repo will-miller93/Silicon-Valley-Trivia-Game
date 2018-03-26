@@ -5,3 +5,43 @@
 /* separate the jumbotron and the container */
 /* give the container a border */
 /* give the container a color other than white as well. */
+body {
+    
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.jumbotron {
+
+    background-color: lightgrey;
+
+}
+h1, #rules, .start-button {
+    text-align: center;    
+
+}
+.container {
+    background-color: lightgrey;
+
+}
+.timer {
+    text-align: center;
+    font-size: 25px;
+}
+#questionText {
+    text-align: center;
+
+}
+#endGame {
+    text-align: center;
+}
+#scoreText {
+    text-align: center;
+}
+.posAnswer {
+    text-align: center;
+}
+.posOne .posTwo .posThree .posFour {
+    text-align: center
+}
+
